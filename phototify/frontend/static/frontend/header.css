@@ -1,0 +1,429 @@
+.appbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2; 
+
+}
+.home-body {
+    /* background-color: white; */
+    z-index: 0
+}
+.header {    
+    background-color: white;
+    width: 100%;
+}   
+.my-navbar-header-top{
+    display: flex;
+}
+.my-navbar-header{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-menu-btn{
+
+}
+.my-navbar-header-userfunction{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 0 10px;
+}
+.custom-signup {
+    outline: none;
+    font-size: 18px;
+    /* width:100px ; */
+    border-width: 2px;  
+    border-color: black;
+    font-weight: bold;
+}
+.custom-signin {
+    outline: none;
+    width:100px ;
+    font-size: 18px;
+    font-weight: bold; 
+    color: black;
+    border-width: 0;
+}
+.custom-signup:focus,.custom-signin:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.custom-signup:hover, .custom-signin:hover{
+    color: #0084ff;
+    background-color: transparent;
+}
+
+.header-searchbar {
+    background-color: #F7F8FA;
+    border-width: 2px;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 15px;
+}
+.header-searchbox, .header-searchbox:focus{
+    outline: none;
+    border-style: none;
+    padding-left: 15px;
+    background-color: transparent;
+}
+.login {
+    background-color: white;
+    width: 400px;
+    border-width: 2px ;
+    border-color: black;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+.login-menu>*{
+    margin: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.Avatar{
+    /* vertical-align: middle; */
+    width: 40px;
+    margin: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.login-upload {
+    border-width: 2px;
+    border-color: black;
+    padding: 5px 5px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+   
+}
+.login-upload:focus {
+    /* -webkit-box-shadow: none!important;
+    box-shadow: none!important; */
+    outline: none;
+}
+
+.login-upload:hover{
+   background-color: #C1C4CD;
+}
+.login-upload *{
+    border: 4px;
+    padding: 0;
+    margin: 5px;
+    width: 100px;
+    display: inline;
+    font-size: 18px;
+    font-weight: bold   ;
+}
+#wave {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    /* z-index: 0;  */
+    position:relative; 
+    /* padding-top:20px; */
+}
+#wave:before {
+content: "";
+display: block;
+position: absolute;
+border-radius: 100% 50%;
+width: 68%;
+height: 300px;
+background-color:white;;
+right: -50px;
+top: -50px;
+}
+#wave:after {
+content: "";
+display: block;
+position: absolute;
+border-radius: 100% 50%;
+width: 60%;
+height: 250px;
+background-color: #F2E223;;
+left: 0;
+top: -180px;
+/* z-index: -1 */
+} 
+.home-adventise-top-body{
+    margin-top:50px;
+}
+.home-adventise-body{
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+}
+.home-adventise{
+    /* z-index: ; */
+    max-height: 500px;
+    /* position: relative; */
+    /* overflow: hidden;   */
+    display: flex;  
+}
+.home-adventise-signup{
+
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 50px;
+    flex:1;
+    z-index: 1;
+}
+.home-adventise-signupbtn{
+    width: 200px;
+}
+.sigupBTN-clappse{
+    /* position: absolute; */
+    width: 100%;
+    /* margin-top: 50px ; */
+    padding-left:20px;
+    padding-right:20px;
+   
+}
+
+.home-adventise-img1{
+
+    /* max-height: 600px; */
+    position:absolute;
+    z-index: 0
+    }
+.home-adventise-img2{
+
+    /* position: relative; */
+    /* right: 0; */ 
+    /* margin-right: 0; */
+    width: 50%;
+    max-height: 800px;
+    min-width: 600px;
+    min-width: 600px;
+    height: 50%;
+    margin-top: -100px;
+    z-index: 0
+}
+
+    /* transform: scale(1.5);     */
+.my-navbar-auth-2{
+    display: none;
+}
+.my-navbar-header-name{
+    height: 40px;
+}
+@media only screen and (max-width: 1000px) {
+    .home-adventise{
+        max-height: 240px;;
+    }
+    .navbar-menu-btn{
+        height: 40px;
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
+    .my-navbar-header-top{
+        /* min-height: 100px; */
+        /* width: 100%; */
+    }
+    .login-menu, .logout-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .my-navbar-header-userfunction{
+        display: initial;
+        position: absolute;
+        right: 80px;
+    }
+    .my-navbar-auth{
+        display: none;
+    }
+    .my-navbar-auth-2{
+        margin-top: 10px;
+        display: initial;
+        /* margin-top: 60px ; */
+        width: 100%;
+
+    }
+    .navbar-header {
+        
+    }
+    .app-body{
+        margin-top: 120px;
+    }
+    .home-adventise-signup{
+        /* position: absolute; */
+        /* width: 10%; */
+        min-width: 240px;
+        margin-top: 50px;
+        margin-left: 20px;
+        z-index: 1;
+    }
+   
+    #wave:before {
+        content: "";
+        display: block;
+        /* position: absolute; */
+        border-radius: 100% 50%;
+        width: 68%;
+        height: 300px;
+        /* background-color:#F7F8FA;; */
+        right: -50px;
+        top: -50px;
+        
+    }
+    #wave:after {
+        content: "";
+        display: block;
+        /* position: absolute; */
+        border-radius: 100% 50%;
+        width: 65%;
+        height: 250px;
+        background-color: #F2E223;;
+        left: 0;
+        top: -180px;
+
+    } 
+    
+    .home-adventise-img2{
+        margin-right: 0;
+        width: 50%;
+        max-height: 400px;
+        min-width: 300px;
+        height: 50%;
+        right:0;
+        margin-top: -100px;
+        /* z-index: -1 */
+    }
+    .card-container-collapsed  {
+        /* display: none; */
+        margin-top: 50px;
+    }
+
+    .card-box-collapsed{       
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        border: none;
+        height: 200px;;
+        /* display: inline; */
+    }
+    .card-header {
+        margin-top: 50px;
+    }
+    .card-box-img{
+        /* height: 200px;  */
+        width: 80px;  
+        /* display: block; */
+        margin: 0 auto;
+      }
+      
+    .home-adventise-Gettheapp-collapsed{
+        display: block ;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        border: none;
+        display: block;
+    }
+
+    .home-adventise-Gettheapp-ad{
+        border: none;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .home-adventise-Gettheapp-img {
+        width: 400px;
+        height: 400px;
+    }
+   
+}
+.card-header {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+    /* margin-top: 100px; */
+}
+.card-container {
+    margin-top:50px;
+    display: flex;
+    background-color: white;
+    /* margin: 0 auto; */
+
+    justify-content: center;
+  }
+
+  
+.card-box-img{
+    /* height: 200px;  */
+    width: 80px;  
+    /* display: block; */
+    margin: 0;
+  }
+.card-box {
+
+      background-color: white;
+      margin-top: 200px;
+      width: 400px;
+      border: none;
+      height: 400px;
+      margin: 0 auto;
+      /* flex: 1; */
+      /* display: inline; */
+  }
+.home-adventise-Gettheapp {
+    display: flex !important;
+    justify-content: space-around;
+
+}
+.home-adventise-Gettheapp-ad{
+    padding: 10px;
+    padding-top: 50px;
+    width: 400px;
+    border: none;
+    height: 300px;
+}
+.home-adventise-Gettheapp-img {
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+.home-appstore {
+    width: 180px;
+    height: 50px;
+    display: flex;
+}
+.home-appstore-link{
+    /* align-items:center; */
+    /* vertical-align: center; */
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+.home-android {
+    width: 180px;
+    height: 50px;
+    display: flex;
+}
+
+.home-appstore-text{
+    padding-top: 0;
+    margin-top: 0;;    
+    font-size: 10px;
+    width: 180px;
+    /* transform: scale(.7); */
+}
+.home-appstore-text>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.logout-menu:hover{
+    cursor:pointer
+}
+.profile-link:hover {
+    text-decoration: none;
+}
